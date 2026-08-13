@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { apiFetch } from "./lib/api";
+import { apiFetch } from "../lib/api";
 
 export default function Home() {
   const [message, setMessage] = useState("Checking backend...");
