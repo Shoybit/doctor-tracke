@@ -194,7 +194,7 @@ DELETE /api/patients/:id
 
 ## Project Structure
 
-```text
+``text
 doctor-tracker/
 ├── frontend/
 │   └── src/
@@ -230,4 +230,4 @@ doctor-tracker/
 
 ## License
 
-This project was developed as part of a technical project assignment.
+This project was developed as part of a technical project assignment
