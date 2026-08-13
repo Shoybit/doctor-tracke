@@ -2,6 +2,23 @@
 
 Doctor Tracker is a secure administrative web application for managing doctors and their associated patients. It provides authenticated access, doctor and patient management, search, filtering, pagination, and dashboard analytics with data visualization. The system uses a separate Next.js frontend and Node.js/Express backend connected to MongoDB, with a focus on clean UX, efficient database queries, reusable components, and scalable architecture.
 
+
+## Live Demo
+
+### Frontend
+
+https://doctor-tracke-two.vercel.app
+
+### Backend API
+
+https://doctor-tracker-backend-7ttt.onrender.com
+
+### GitHub Repositories
+
+- Frontend: https://github.com/Shoybit/doctor-tracke
+- Backend: https://github.com/Shoybit/doctor-tracker-backend
+
+
 ## Features
 
 ### Authentication
