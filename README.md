@@ -177,19 +177,31 @@ GET    /api/doctors/:doctorId/patients
 PUT    /api/patients/:id
 DELETE /api/patients/:id
 ```
-
 ## Visual Evidence
 
-Add your actual screenshots before submission.
+### Dashboard - Desktop
 
-```md
 ![Dashboard Desktop](./public/Dashbord.png)
+
+### Doctors - Desktop
+
 ![Doctors Desktop](./public/dashbord1.png)
-![Doctors Desktop](./public/dashbord2.png)
-![Doctors Desktop](./public/dashbord3.png)
-[Doctors Desktop](./public/Mobile%20Dashbord.png)
-[Doctors Desktop](./public/mobile%20dashbord2.png)
-```
+
+### Patients - Desktop
+
+![Patients Desktop](./public/dashbord2.png)
+
+### Doctor Details - Additional View
+
+![Doctor Details](./public/Doctor%20details.png)
+
+### Dashboard - Mobile
+
+![Dashboard Mobile](./public/Mobile%20Dashbord.png)
+
+### Dashboard - Mobile 2
+
+![Dashboard Mobile 2](./public/mobile%20dashbord2.png)
 
 ## Project Structure
 
