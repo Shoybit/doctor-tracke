@@ -13,6 +13,7 @@ import {
   AcademicCapIcon,
   HeartIcon,
   ClockIcon,
+  UsersIcon ,
 } from "@heroicons/react/24/outline";
 import {
   LineChart,
@@ -154,57 +155,53 @@ const formatDate = (date) => {
   });
 };
 
-  // Statistics cards data
-  const statsCards = [
-{
-  title: "Avg Patients/Doctor",
-  value:
-    stats?.totalDoctors > 0
-      ? (stats.totalPatients / stats.totalDoctors).toFixed(1)
-      : "0.0",
-  icon: ChartBarIcon,
-  color: "green",
-  bgColor: "bg-green-50",
-  textColor: "text-green-600",
-},,
-    {
-      title: "Total Patients",
-      value: stats?.totalPatients ?? 0,
-      icon: UserIcon,
-      color: "purple",
-      bgColor: "bg-purple-50",
-      textColor: "text-purple-600",
-    },
-    {
-      title: "Avg Patients/Doctor",
-      value: stats?.patientsPerDoctor?.length
-        ? Math.round(
-            stats.totalPatients / stats.totalDoctors || 0
-          )
-        : 0,
-      icon: ChartBarIcon,
-      color: "green",
-      bgColor: "bg-green-50",
-      textColor: "text-green-600",
-    },
-{
-  title: "Current Date & Time",
-  value: currentDateTime.toLocaleDateString("en-US", {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-  }),
-  subtitle: currentDateTime.toLocaleTimeString("en-US", {
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
-  }),
-  icon: ClockIcon,
-  color: "blue",
-  bgColor: "bg-blue-50",
-  textColor: "text-blue-600",
-},
-  ];
+// Statistics cards data
+const statsCards = [
+  {
+    title: "Total Doctors",
+    value: stats?.totalDoctors ?? 0,
+    icon: UsersIcon,
+    color: "blue",
+    bgColor: "bg-blue-50",
+    textColor: "text-blue-600",
+  },
+  {
+    title: "Total Patients",
+    value: stats?.totalPatients ?? 0,
+    icon: UserIcon,
+    color: "purple",
+    bgColor: "bg-purple-50",
+    textColor: "text-purple-600",
+  },
+  {
+    title: "Avg Patients/Doctor",
+    value:
+      stats?.totalDoctors > 0
+        ? (stats.totalPatients / stats.totalDoctors).toFixed(1)
+        : "0.0",
+    icon: ChartBarIcon,
+    color: "green",
+    bgColor: "bg-green-50",
+    textColor: "text-green-600",
+  },
+  {
+    title: "Current Date & Time",
+    value: currentDateTime.toLocaleDateString("en-US", {
+      month: "short",
+      day: "numeric",
+      year: "numeric",
+    }),
+    subtitle: currentDateTime.toLocaleTimeString("en-US", {
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+    }),
+    icon: ClockIcon,
+    color: "blue",
+    bgColor: "bg-blue-50",
+    textColor: "text-blue-600",
+  },
+];
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50/30 p-4 sm:p-6">
