@@ -156,14 +156,17 @@ const formatDate = (date) => {
 
   // Statistics cards data
   const statsCards = [
-    {
-      title: "Total Doctors",
-      value: stats?.totalDoctors ?? 0,
-      icon: UserGroupIcon,
-      color: "blue",
-      bgColor: "bg-blue-50",
-      textColor: "text-blue-600",
-    },
+{
+  title: "Avg Patients/Doctor",
+  value:
+    stats?.totalDoctors > 0
+      ? (stats.totalPatients / stats.totalDoctors).toFixed(1)
+      : "0.0",
+  icon: ChartBarIcon,
+  color: "green",
+  bgColor: "bg-green-50",
+  textColor: "text-green-600",
+},,
     {
       title: "Total Patients",
       value: stats?.totalPatients ?? 0,
@@ -314,19 +317,18 @@ const formatDate = (date) => {
                 <ResponsiveContainer width="100%" height="100%">
                   <LineChart data={stats.patientsByDate}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
-                    <XAxis
-                      
-                    dataKey="doctorName"
-                    tick={{ fontSize: 12 }}
-                    interval={0}
-                    tickFormatter={(value) => {
-                        const date = new Date(value);
-                        return date.toLocaleDateString("en-US", {
-                          month: "short",
-                          day: "numeric",
-                        });
-                      }}
-                    />
+<XAxis
+  dataKey="date"
+  tick={{ fontSize: 12 }}
+  interval={0}
+  tickFormatter={(value) => {
+    const date = new Date(value);
+    return date.toLocaleDateString("en-US", {
+      month: "short",
+      day: "numeric",
+    });
+  }}
+/>
                     <YAxis />
                     <Tooltip
                       contentStyle={{

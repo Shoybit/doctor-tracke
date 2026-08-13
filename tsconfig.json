@@ -30,7 +30,7 @@
     "**/*.mts",
     "**/*.ts",
     "**/*.tsx"
-, "src/app/doctors/[id]/page.jsx"  ],
+, "src/app/doctors/[id]/page.jsx", "src/app/patients/[id]/edit/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]
