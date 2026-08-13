@@ -255,7 +255,6 @@ doctor-tracker/
 - Advanced role permissions
 - More granular analytics
 - Advanced filtering
-- Production deployment
 
 ## License
 
