@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext, useEffect, useState } from "react";
-import { apiFetch } from "@/lib/api";
+import { apiFetch } from "../lib/api";
 
 const AuthContext = createContext();
 

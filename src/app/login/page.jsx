@@ -9,7 +9,7 @@ import {
   LockClosedIcon,
 } from "@heroicons/react/24/outline";
 
-import { useAuth } from "@/context/AuthContext";
+import { useAuth } from "../../context/AuthContext";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -91,14 +91,14 @@ export default function LoginPage() {
   };
 
   return (
-    <main className="flex min-h-screen items-center justify-center bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 px-4">
+    <main className="flex min-h-screen items-center justify-center bg-linear-to-br from-blue-50 via-indigo-50 to-purple-50 px-4">
       <div className="w-full max-w-md">
         {/* Brand Card */}
         <div className="rounded-2xl bg-white p-8 shadow-xl shadow-blue-100/20">
           
           {/* Logo & Header */}
           <div className="mb-8 text-center">
-            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-indigo-600 shadow-lg shadow-blue-500/25">
+            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-linear-to-br from-blue-600 to-indigo-600 shadow-lg shadow-blue-500/25">
               <svg
                 className="h-8 w-8 text-white"
                 fill="none"
@@ -133,7 +133,7 @@ export default function LoginPage() {
           {error && (
             <div className="mb-5 flex items-center gap-2 rounded-lg border border-red-200 bg-red-50 p-3 text-sm text-red-700">
               <svg
-                className="h-5 w-5 flex-shrink-0"
+                className="h-5 w-5 shrink-0"
                 fill="currentColor"
                 viewBox="0 0 20 20"
               >

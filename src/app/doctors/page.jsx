@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { useAuth } from "@/context/AuthContext";
-import { apiFetch } from "@/lib/api";
+import { useAuth } from "../../context/AuthContext";
+import { apiFetch } from "../../lib/api";
 
 import {
   MagnifyingGlassIcon,
@@ -133,7 +133,7 @@ export default function DoctorsPage() {
           doctor.specialization
             ?.toLowerCase()
             .includes(searchTerm) ||
-          doctor.department
+          doctor.hospital 
             ?.toLowerCase()
             .includes(searchTerm);
 
@@ -745,20 +745,20 @@ export default function DoctorsPage() {
                       </div>
                     </th>
 
-                    {/* Department */}
+                    {/* hospital*/}
 
                     <th
                       className="cursor-pointer px-6 py-4 text-xs font-semibold uppercase tracking-wide text-gray-500 hover:text-gray-700"
                       onClick={() =>
                         handleSort(
-                          "department"
+                          "hospital "
                         )
                       }
                     >
                       <div className="flex items-center gap-1">
-                        Department
+                        hospital 
                         {getSortIcon(
-                          "department"
+                          "hospital"
                         )}
                       </div>
                     </th>
@@ -844,7 +844,7 @@ export default function DoctorsPage() {
 
                         </td>
 
-                        {/* Department */}
+                        {/* hospital*/}
 
                         <td className="px-6 py-4">
 
@@ -853,7 +853,7 @@ export default function DoctorsPage() {
                             <BuildingOfficeIcon className="h-4 w-4 text-gray-400" />
 
                             <span className="text-sm text-gray-700">
-                              {doctor.department ||
+                              {doctor.hospital  ||
                                 "—"}
                             </span>
 

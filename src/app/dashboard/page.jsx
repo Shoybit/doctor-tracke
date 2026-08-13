@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { useAuth } from "@/context/AuthContext";
-import { apiFetch } from "@/lib/api";
+import { apiFetch } from "../../lib/api";
+import { useAuth } from "../../context/AuthContext";
 import {
   UserGroupIcon,
   UserIcon,
