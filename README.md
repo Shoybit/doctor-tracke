@@ -11,7 +11,7 @@ https://doctor-tracke-two.vercel.app
 
 ### Backend API
 
-https://doctor-tracker-backend-7ttt.onrender.com
+https://doctor-tracker-backend-7ttt.onrender.com/api/health
 
 ### GitHub Repositories
 
